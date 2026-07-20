@@ -5,13 +5,13 @@ automated testing, image vulnerability scanning, and continuous delivery via Git
 
 ## What this project demonstrates
 
-- **Multi-stage Docker builds** — separates build dependencies from the runtime image,
+- **Multi-stage Docker builds** separates build dependencies from the runtime image,
   keeping the final image small.
-- **Non-root container execution** — the app runs as an unprivileged `appuser`, not root.
-- **CI/CD with GitHub Actions** — every push/PR is linted, tested, built, and scanned
+- **Non-root container execution**  the app runs as an unprivileged `appuser`, not root.
+- **CI/CD with GitHub Actions** every push/PR is linted, tested, built, and scanned
   before anything reaches the registry.
-- **Vulnerability scanning** — Trivy scans the built image for known CVEs on every run.
-- **Local multi-service dev environment** — `docker-compose` runs the API alongside Postgres.
+- **Vulnerability scanning** Trivy scans the built image for known CVEs on every run.
+- **Local multi-service dev environment** `docker-compose` runs the API alongside Postgres.
 
 ## Architecture
 
