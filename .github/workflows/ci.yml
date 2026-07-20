@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository }}
+  IMAGE_NAME: ghcr.io/Okpala-Uchenna/devops-demo-API
 
 jobs:
   lint-and-test:
